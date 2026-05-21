@@ -124,7 +124,9 @@ h1 .hl{color:var(--green);background:linear-gradient(transparent 62%,rgba(94,155
 .hero-dots{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10}
 .hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.4);cursor:pointer;transition:background 0.3s;border:none;padding:0}
 .hero-dot.active{background:rgba(255,255,255,0.9)}
-@media(max-width:720px){.hero-right{display:none}}
+@media(max-width:720px){.hero-right{display:block;height:220px}}
+@media(max-width:720px){.hero-slider{min-height:220px}}
+@media(max-width:720px){.hero-slide img{min-height:220px}}
 /* AREA BAND */
 .area-band{background:var(--green);padding:14px 5%;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;}
 .area-band-item{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.9);letter-spacing:0.08em;}
