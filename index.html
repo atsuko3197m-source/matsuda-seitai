@@ -165,7 +165,8 @@ section{padding:80px 5%}
 /* ABOUT */
 .about{background:var(--wood-pale)}
 .about-inner{display:grid;grid-template-columns:260px 1fr;gap:56px;margin-top:48px;align-items:center}
-@media(max-width:640px){.about-inner{grid-template-columns:1fr}}
+@media(max-width:640px){.about-inner{grid-template-columns:1fr;justify-items:center}}
+@media(max-width:640px){.about-img{max-width:50%}}
 .about-img{border-radius:16px;overflow:hidden;aspect-ratio:3/4;max-width:70%}
 .about-img img{width:100%;height:100%;object-fit:cover}
 .about-body .title{font-size:11px;color:var(--wood);letter-spacing:0.2em;margin-bottom:8px}
