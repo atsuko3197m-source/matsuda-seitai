@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://atsuko3197m-source.github.io/sitemap.xml
+Sitemap: https://www.matsudaseitai.net/sitemap.xml
