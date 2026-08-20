@@ -1,0 +1,16 @@
+# macOSが自動生成するファイル
+.DS_Store
+
+# Claude Code のローカル設定・作業フォルダ
+.claude/
+
+# アプリのインストーラ（巨大なのでGitHubに置かない）
+*.dmg
+*.zip
+
+# ローカル確認用の簡易サーバー
+serve.py
+
+# 過去バージョン・下書きのHTML（公開対象は index.html のみ）
+matsuda_seitai_*.html
+matsuda_instagram_section*.html
