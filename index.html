@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6MB69E0JSY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6MB69E0JSY');
+</script>
 <title>まつだ整体｜高岡市の女性整体師・定休日なし9〜19時・完全予約制</title>
 <meta name="description" content="富山県高岡市六家の女性整体師による整体院。産後骨盤矯正・姿勢矯正・肩こり・腰痛・頭痛・睡眠改善に対応。定休日なし・9:00〜19:00・1日5名限定の完全予約制。土日祝も受付中。">
 <meta name="keywords" content="高岡市 整体,高岡 女性整体師,高岡 産後 骨盤矯正,高岡 肩こり 整体,高岡 腰痛 整体,高岡 定休日なし 整体,高岡 土日祝 整体,富山 整体 おすすめ,まつだ整体">
@@ -693,6 +701,24 @@ reveals.forEach(el => observer.observe(el));
   dots.forEach(function(d,i){ d.addEventListener('click', function(){ go(i); clearInterval(timer); timer = setInterval(function(){ go(cur+1); }, 4000); }); });
   var timer = setInterval(function(){ go(cur+1); }, 4000);
 })();
+</script>
+<script>
+// ==============================
+// 予約アクションの計測（電話タップ / LINEタップ）
+// GA4のイベント名: tap_tel / tap_line
+// ==============================
+document.addEventListener('click', function(e){
+  var a = e.target && e.target.closest ? e.target.closest('a') : null;
+  if (!a || typeof gtag !== 'function') return;
+  var href = a.getAttribute('href') || '';
+  var sec = a.closest('section');
+  var where = a.className || (sec && sec.id) || (a.closest('nav') ? 'nav' : 'unknown');
+  if (href.indexOf('tel:') === 0) {
+    gtag('event', 'tap_tel', { link_location: where });
+  } else if (href.indexOf('line.me') > -1) {
+    gtag('event', 'tap_line', { link_location: where });
+  }
+});
 </script>
 </body>
 </html>
